@@ -1,16 +1,88 @@
-# React + Vite
+# Portfolio — Ciech Makoi Makuei
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A personal portfolio website built with React, featuring a dark Catppuccin Mocha theme, responsive two-column layout, and smooth scroll animations.
 
-Currently, two official plugins are available:
+## Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **React** — component-based UI
+- **Vite** — fast dev server and build tool
+- **CSS** — plain CSS with custom properties (no frameworks)
+- **Google Fonts** — Inter typeface
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Two-column layout with sticky sidebar (collapses to top nav on mobile)
+- Typing animation cycling through roles
+- Active nav link highlighting on scroll (IntersectionObserver)
+- Fade-in section animations on scroll
+- Project cards with hover lift and sample images
+- Skill cards with inline technology icons
+- Responsive design (mobile, tablet, desktop)
+- Keyboard navigable with visible focus indicators
+- Respects `prefers-reduced-motion`
 
-## Expanding the Oxlint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+```sh
+npm install
+npm run dev
+```
+
+Open [http://localhost:5173](http://localhost:5173) in your browser.
+
+## Build for Production
+
+```sh
+npm run build
+```
+
+Output is in the `dist/` directory. Serve it with any static host.
+
+## Lint
+
+```sh
+npm run lint
+```
+
+## Project Structure
+
+```
+src/
+├── components/
+│   ├── Sidebar.jsx      — Sticky sidebar with name, nav, socials
+│   ├── About.jsx        — About Me section
+│   ├── Skills.jsx       — Technologies grouped by category
+│   ├── Learning.jsx     — Currently learning topics + stats
+│   ├── Projects.jsx     — Project cards with images
+│   ├── Education.jsx    — Education details
+│   ├── Contact.jsx      — Contact links and footer
+│   └── TechIcon.jsx     — SVG icons for technologies
+├── hooks/
+│   └── useActiveSection.js  — Tracks visible section via IntersectionObserver
+├── App.jsx              — Main layout (sidebar + content)
+├── App.css              — Layout, section, and animation styles
+├── index.css            — CSS custom properties, reset, typography
+└── main.jsx             — React entry point
+```
+
+## Theming
+
+All colors are defined as CSS custom properties in `:root` (`src/index.css`). The current theme is **Catppuccin Mocha**. To change themes, update the CSS variable values.
+
+## Deployment
+
+Deploy the `dist/` folder to any static host:
+
+- **GitHub Pages** — `npx gh-pages -d dist`
+- **Vercel** — connect repo, auto-detects Vite
+- **Netlify** — drag `dist/` or connect repo
+
+## Colors
+
+| Role       | Color    | Hex       |
+|------------|----------|-----------|
+| Background | base     | `#1e1e2e` |
+| Cards      | surface0 | `#313244` |
+| Text       | text     | `#cdd6f4` |
+| Subtext    | subtext0 | `#a6adc8` |
+| Accent     | blue     | `#89b4fa` |
