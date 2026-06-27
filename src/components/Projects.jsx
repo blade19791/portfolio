@@ -1,6 +1,7 @@
 import { useRef, useEffect } from 'react';
 import './Projects.css';
 import locallinkImg from '../assets/locallink.png';
+import shopEaseImg from '../assets/shop-ease.png';
 
 const PROJECTS = [
   {
@@ -12,36 +13,12 @@ const PROJECTS = [
     image: locallinkImg,
   },
   {
-    title: 'Project One',
-    description: 'Short placeholder description.',
-    techs: ['React', 'Node.js', 'PostgreSQL'],
-    github: '#',
+    title: 'ShopEase',
+    description: 'A single-page e-commerce front-end with a functional shopping cart, product category filtering, price sorting, and a responsive mobile-friendly layout.',
+    techs: ['HTML', 'CSS', 'JavaScript', 'Font Awesome'],
+    github: 'https://github.com/blade19791/shop-ease',
     demo: '#',
-    image: 'https://picsum.photos/seed/project1/400/200',
-  },
-  {
-    title: 'Project Two',
-    description: 'Short placeholder description.',
-    techs: ['HTML', 'CSS', 'JavaScript'],
-    github: '#',
-    demo: '#',
-    image: 'https://picsum.photos/seed/project2/400/200',
-  },
-  {
-    title: 'Project Three',
-    description: 'Short placeholder description.',
-    techs: ['Express', 'MySQL'],
-    github: '#',
-    demo: '#',
-    image: 'https://picsum.photos/seed/project3/400/200',
-  },
-  {
-    title: 'Project Four',
-    description: 'Short placeholder description.',
-    techs: ['React', 'Express', 'PostgreSQL'],
-    github: '#',
-    demo: '#',
-    image: 'https://picsum.photos/seed/project4/400/200',
+    image: shopEaseImg,
   },
 ];
 
