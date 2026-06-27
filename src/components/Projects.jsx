@@ -1,7 +1,16 @@
 import { useRef, useEffect } from 'react';
 import './Projects.css';
+import locallinkImg from '../assets/locallink.png';
 
 const PROJECTS = [
+  {
+    title: 'LocalLink',
+    description: 'A premium localized service finder platform for Rwanda. Connects clients with vetted local professionals like plumbers, carpenters, and IT support across Kigali.',
+    techs: ['React', 'Node.js', 'Express', 'PostgreSQL', 'Tailwind CSS', 'Vite'],
+    github: 'https://github.com/blade19791/locallink',
+    demo: '#',
+    image: locallinkImg,
+  },
   {
     title: 'Project One',
     description: 'Short placeholder description.',
