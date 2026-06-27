@@ -15,8 +15,11 @@
 .sidebar__inner {
   display: flex;
   flex-direction: column;
-  gap: 28px;
   height: 100%;
+}
+
+.sidebar__header {
+  margin-bottom: 20px;
 }
 
 .sidebar__name {
@@ -61,7 +64,12 @@
   color: var(--everforest-gray);
   line-height: 1.7;
   max-width: 440px;
-  margin-bottom: 12px;
+  margin-bottom: 20px;
+}
+
+.sidebar__nav {
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .sidebar__nav ul {
@@ -119,10 +127,6 @@
   width: 36px;
 }
 
-.sidebar__bottom {
-  margin-top: auto;
-}
-
 .sidebar__socials {
   display: flex;
   gap: 20px;
@@ -149,12 +153,20 @@
   }
 
   .sidebar__inner {
-    gap: 16px;
     height: auto;
+  }
+
+  .sidebar__header {
+    margin-bottom: 12px;
   }
 
   .sidebar__intro {
     max-width: 100%;
+    margin-bottom: 12px;
+  }
+
+  .sidebar__nav {
+    margin-top: 0;
     margin-bottom: 0;
   }
 
@@ -177,10 +189,6 @@
 
   .sidebar__nav-link::before {
     display: none;
-  }
-
-  .sidebar__bottom {
-    margin-top: 0;
   }
 
   .sidebar__socials {
