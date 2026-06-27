@@ -69,13 +69,9 @@ src/
 
 All colors are defined as CSS custom properties in `:root` (`src/index.css`). The current theme is **Catppuccin Mocha**. To change themes, update the CSS variable values.
 
-## Deployment
+## Live Site
 
-Deploy the `dist/` folder to any static host:
-
-- **GitHub Pages** — `npx gh-pages -d dist`
-- **Vercel** — connect repo, auto-detects Vite
-- **Netlify** — drag `dist/` or connect repo
+[portfolio-ciech.vercel.app](https://portfolio-ciech.vercel.app)
 
 ## Colors
 
