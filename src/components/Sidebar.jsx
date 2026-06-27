@@ -67,6 +67,8 @@ function Sidebar({ activeSection, onNavClick }) {
           I build web applications and explore backend technologies, Linux, Neovim, and software security.
         </p>
 
+        <div className="sidebar__spacer" />
+
         <nav className="sidebar__nav" aria-label="Main navigation">
           <ul>
             {NAV_ITEMS.map((item) => (
@@ -81,6 +83,8 @@ function Sidebar({ activeSection, onNavClick }) {
             ))}
           </ul>
         </nav>
+
+        <div className="sidebar__spacer sidebar__spacer--bottom" />
 
         <div className="sidebar__bottom">
           <div className="sidebar__socials">
