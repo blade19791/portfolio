@@ -1,0 +1,103 @@
+.projects__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+.projects__card {
+  background-color: var(--everforest-card);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.projects__card:hover {
+  transform: translateY(-6px);
+  background-color: var(--everforest-hover);
+}
+
+.projects__card-image {
+  width: 100%;
+  height: 140px;
+  background: linear-gradient(135deg, var(--everforest-bg-alt) 0%, var(--everforest-card) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid var(--everforest-border);
+  overflow: hidden;
+}
+
+.projects__card-image-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  color: var(--everforest-gray);
+  opacity: 0.5;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.projects__card:hover .projects__card-image-inner {
+  opacity: 0.8;
+  transform: scale(1.05);
+}
+
+.projects__card-image-label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.projects__card-header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 0 24px;
+}
+
+.projects__card-links {
+  display: flex;
+  gap: 12px;
+}
+
+.projects__card-links a {
+  color: var(--everforest-gray);
+  transition: color 0.3s ease;
+}
+
+.projects__card-links a:hover,
+.projects__card-links a:focus-visible {
+  color: var(--everforest-green);
+}
+
+.projects__card-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--everforest-fg);
+  padding: 0 24px;
+}
+
+.projects__card-description {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--everforest-gray);
+  flex: 1;
+  padding: 0 24px;
+}
+
+.projects__card-techs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  padding: 0 24px 24px;
+}
+
+.projects__card-techs li {
+  font-size: 12px;
+  color: var(--everforest-gray);
+  font-family: 'Inter', monospace;
+  letter-spacing: 0.5px;
+}

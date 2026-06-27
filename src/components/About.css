@@ -1,0 +1,15 @@
+.about {
+  padding-top: 0;
+}
+
+.about__content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.about__content p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--everforest-gray);
+}
