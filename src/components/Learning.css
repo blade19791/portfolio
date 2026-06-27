@@ -18,14 +18,14 @@
   font-size: 13px;
   color: var(--everforest-green);
   background-color: var(--everforest-green-dim);
-  border: 1px solid rgba(167, 192, 128, 0.25);
+  border: 1px solid rgba(136, 192, 208, 0.25);
   border-radius: 4px;
   transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
 .learning__tag:hover {
   background-color: var(--everforest-green-hover);
-  border-color: rgba(167, 192, 128, 0.45);
+  border-color: rgba(136, 192, 208, 0.45);
 }
 
 .learning__stats {

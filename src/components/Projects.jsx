@@ -8,7 +8,7 @@ const PROJECTS = [
     techs: ['React', 'Node.js', 'PostgreSQL'],
     github: '#',
     demo: '#',
-    image: null,
+    image: 'https://picsum.photos/seed/project1/400/200',
   },
   {
     title: 'Project Two',
@@ -16,7 +16,7 @@ const PROJECTS = [
     techs: ['HTML', 'CSS', 'JavaScript'],
     github: '#',
     demo: '#',
-    image: null,
+    image: 'https://picsum.photos/seed/project2/400/200',
   },
   {
     title: 'Project Three',
@@ -24,7 +24,7 @@ const PROJECTS = [
     techs: ['Express', 'MySQL'],
     github: '#',
     demo: '#',
-    image: null,
+    image: 'https://picsum.photos/seed/project3/400/200',
   },
   {
     title: 'Project Four',
@@ -32,7 +32,7 @@ const PROJECTS = [
     techs: ['React', 'Express', 'PostgreSQL'],
     github: '#',
     demo: '#',
-    image: null,
+    image: 'https://picsum.photos/seed/project4/400/200',
   },
 ];
 
@@ -72,15 +72,14 @@ function Projects() {
             className="projects__card"
             ref={(el) => (cardRefs.current[i] = el)}
           >
-            <div className="projects__card-image" aria-hidden="true">
-              <div className="projects__card-image-inner">
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
-                  <line x1="8" y1="21" x2="16" y2="21" />
-                  <line x1="12" y1="17" x2="12" y2="21" />
-                </svg>
-                <span className="projects__card-image-label">Project Preview</span>
-              </div>
+            <div className="projects__card-image">
+              <img
+                src={project.image}
+                alt={`${project.title} screenshot`}
+                loading="lazy"
+                width="400"
+                height="200"
+              />
             </div>
             <div className="projects__card-header">
               <div className="projects__card-links">

@@ -1,20 +1,20 @@
 :root {
-  --everforest-bg: #2d353b;
-  --everforest-bg-alt: #343f44;
-  --everforest-card: #3d484d;
-  --everforest-hover: #455059;
-  --everforest-fg: #d3c6aa;
-  --everforest-gray: #859289;
-  --everforest-green: #a7c080;
-  --everforest-green-dim: rgba(167, 192, 128, 0.08);
-  --everforest-green-hover: rgba(167, 192, 128, 0.15);
-  --everforest-blue: #7fbbb3;
-  --everforest-yellow: #e69875;
-  --everforest-orange: #e67e80;
-  --everforest-aqua: #83c092;
-  --everforest-purple: #d699b6;
-  --everforest-border: rgba(133, 146, 137, 0.15);
-  --everforest-footer: #6a7a7a;
+  --everforest-bg: #2E3440;
+  --everforest-bg-alt: #3B4252;
+  --everforest-card: #434C5E;
+  --everforest-hover: #4C566A;
+  --everforest-fg: #ECEFF4;
+  --everforest-gray: #D8DEE9;
+  --everforest-green: #88C0D0;
+  --everforest-green-dim: rgba(136, 192, 208, 0.08);
+  --everforest-green-hover: rgba(136, 192, 208, 0.15);
+  --everforest-blue: #81A1C1;
+  --everforest-yellow: #EBCB8B;
+  --everforest-orange: #D08770;
+  --everforest-aqua: #8FBCBB;
+  --everforest-purple: #B48EAD;
+  --everforest-border: rgba(216, 222, 233, 0.12);
+  --everforest-footer: #4C566A;
 }
 
 *,

@@ -22,33 +22,15 @@
 .projects__card-image {
   width: 100%;
   height: 140px;
-  background: linear-gradient(135deg, var(--everforest-bg-alt) 0%, var(--everforest-card) 100%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-bottom: 1px solid var(--everforest-border);
   overflow: hidden;
+  background-color: var(--everforest-bg-alt);
 }
 
-.projects__card-image-inner {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 8px;
-  color: var(--everforest-gray);
-  opacity: 0.5;
-  transition: opacity 0.3s ease, transform 0.3s ease;
-}
-
-.projects__card:hover .projects__card-image-inner {
-  opacity: 0.8;
-  transform: scale(1.05);
-}
-
-.projects__card-image-label {
-  font-size: 11px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+.projects__card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .projects__card-header {
