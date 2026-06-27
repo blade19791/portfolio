@@ -2,10 +2,8 @@ import { useRef, useEffect } from 'react';
 import './Contact.css';
 
 const CONTACT_LINKS = [
-  { label: 'Email', href: 'mailto:example@email.com', text: 'example@email.com' },
-  { label: 'GitHub', href: 'https://github.com/placeholder', text: 'github.com/placeholder' },
-  { label: 'LinkedIn', href: 'https://linkedin.com/in/placeholder', text: 'linkedin.com/in/placeholder' },
-  { label: 'Twitter', href: 'https://twitter.com/placeholder', text: 'twitter.com/placeholder' },
+  { label: 'GitHub', href: 'https://github.com/blade19791', text: 'github.com/blade19791' },
+  { label: 'LinkedIn', href: 'https://www.linkedin.com/in/ciech-makoi-a31048409/', text: 'linkedin.com/in/ciech-makoi-a31048409' },
 ];
 
 function Contact() {
@@ -50,7 +48,7 @@ function Contact() {
         ))}
       </div>
       <div className="contact__footer">
-        <p>Designed &amp; Built by James</p>
+        <p>Designed &amp; Built by Ciech</p>
       </div>
     </section>
   );
